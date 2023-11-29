@@ -1,0 +1,7 @@
+dob(john, 'January 1, 1990').
+dob(lisa, 'March 15, 1985').
+dob(mike, 'November 30, 1995').
+dob(emma, 'May 10, 2000').
+
+date_of_birth(Name, DOB) :-
+    dob(Name, DOB).
