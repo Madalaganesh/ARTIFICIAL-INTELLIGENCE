@@ -1,0 +1,15 @@
+can_fly(eagle).
+can_fly(sparrow).
+can_fly(pigeon).
+cannot_fly(penguin).
+cannot_fly(ostrich).
+
+flies(Bird) :-
+    can_fly(Bird)
+
+flies(Bird) :-
+    \+ cannot_fly(Bird),
+    \+ can_fly(Bird).
+
+cannot_fly(Bird) :-
+    \+ can_fly(Bird).
