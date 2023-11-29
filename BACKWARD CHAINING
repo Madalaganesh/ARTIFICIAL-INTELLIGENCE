@@ -1,0 +1,14 @@
+parent(john, bob).
+parent(john, lisa).
+parent(mary, lisa).
+parent(mary, bob).
+male(john).
+female(mary).
+
+father(X, Y) :-
+    parent(X, Y),
+    male(X).
+
+mother(X, Y) :-
+    parent(X, Y),
+    female(X).
